@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px;
+}
+
+.left{
+    width:50%;
+}
+
+.right{
+    width:50%;
+}
+
+.right img{
+    width:100%;
+}
+
+h1{
+    font-size:72px;
+    line-height:1;
+}
+
+h1 span{
+    color:#d6ff00;
+}
+
+.btn{
+    display:inline-block;
+    background:black;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:12px;
+}
