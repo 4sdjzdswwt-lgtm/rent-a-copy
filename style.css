@@ -1,42 +1,218 @@
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
+/* Genel Sayfa Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:80px;
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fdfdfd;
+    color: #111111;
+    line-height: 1.5;
 }
 
-.left{
-    width:50%;
+/* --- ÜST MENÜ (HEADER) STİLLERİ --- */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    padding: 20px 80px;
+    color: #ffffff;
 }
 
-.right{
-    width:50%;
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.right img{
-    width:100%;
+.header-logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
-h1{
-    font-size:72px;
-    line-height:1;
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
-h1 span{
-    color:#d6ff00;
+.brand-name {
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.5px;
 }
 
-.btn{
-    display:inline-block;
-    background:black;
-    color:white;
-    padding:15px 30px;
-    text-decoration:none;
-    border-radius:12px;
+.yellow-text {
+    color: #d6ff00;
+}
+
+.sub-text {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    color: #aaaaaa;
+    margin-top: -2px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #d6ff00;
+}
+
+.nav-menu a.active {
+    border-bottom: 2px solid #d6ff00;
+    padding-bottom: 6px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-nav {
+    background: #d6ff00;
+    color: #000000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 13px;
+    transition: opacity 0.2s ease;
+}
+
+.btn-nav:hover {
+    opacity: 0.9;
+}
+
+/* --- ANA İÇERİK (HERO) STİLLERİ --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    gap: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 45%;
+}
+
+.tagline {
+    color: #b5db00;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #b5db00;
+}
+
+.description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 35px;
+    max-width: 480px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-dark {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.right {
+    width: 55%;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE) --- */
+@media (max-width: 992px) {
+    .main-header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-menu a {
+        margin: 0 5px;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .cta-buttons {
+        flex-direction: column;
+    }
 }
