@@ -1,4 +1,4 @@
-/* Temel Sıfırlamalar */
+/* Sayfa Sıfırlama */
 * {
     margin: 0;
     padding: 0;
@@ -7,251 +7,247 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
-/* --- SİYAH SİTE MENÜSÜ (HEADER) --- */
+/* --- SİYAH ÜST BAR (HEADER) --- */
 .main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000000;
-    padding: 20px 8%;
-    color: #ffffff;
-    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: #000000 !important; /* Arka plan kesinlikle siyah */
+    padding: 20px 8% !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    min-height: 80px;
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
 }
 
-/* Elinizdeki büyük logonun ekranı kaplamasını önleyen en kritik ayar */
+/* LOGONUN SAYFAYI KAPLAMASINI ENGELLEYEN EN ÖNEMLİ AYAR */
 .logo-img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
+    height: 35px !important;
+    width: auto !important;
+    display: block !important;
+    object-fit: contain !important;
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .brand-name {
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: -0.5px;
-    line-height: 1;
+    font-weight: bold !important;
+    font-size: 22px !important;
+    color: #ffffff !important;
+    letter-spacing: -0.5px !important;
+    line-height: 1 !important;
 }
 
 .yellow-text {
-    color: #b5db00; /* Gerçek fıstık yeşili tonu */
+    color: #b5db00 !important; /* Logodaki fıstık yeşili tonu */
 }
 
 .sub-text {
-    font-size: 8px;
-    letter-spacing: 1.5px;
-    color: #aaaaaa;
-    margin-top: 3px;
+    font-size: 8px !important;
+    letter-spacing: 1.5px !important;
+    color: #aaaaaa !important;
+    margin-top: 3px !important;
 }
 
 .nav-menu a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    margin: 0 15px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
 }
 
 .nav-menu a.active, .nav-menu a:hover {
-    color: #b5db00;
+    color: #b5db00 !important;
 }
 
 .nav-menu a.active {
-    border-bottom: 2px solid #b5db00;
-    padding-bottom: 5px;
+    border-bottom: 2px solid #b5db00 !important;
+    padding-bottom: 5px !important;
 }
 
 .btn-nav {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 13px;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
 }
 
-/* --- ANA SAYFA YAZILARI (HERO) --- */
+/* --- İÇERİK ALANI (HERO) --- */
 .hero-container {
-    width: 100%;
-    background-color: #ffffff;
+    width: 100% !important;
+    background-color: #ffffff !important;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 8%;
-    gap: 50px;
-    max-width: 1400px;
-    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 80px 8% !important;
+    gap: 50px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
 }
 
 .left {
-    width: 50%;
+    width: 50% !important;
 }
 
 .tagline {
-    color: #b5db00;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
+    color: #b5db00 !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 20px !important;
 }
 
 h1 {
-    font-size: 64px;
-    line-height: 1.05;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 25px;
+    font-size: 64px !important;
+    line-height: 1.05 !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    margin-bottom: 25px !important;
 }
 
 .highlight {
-    color: #b5db00;
+    color: #b5db00 !important;
 }
 
 .description {
-    font-size: 16px;
-    color: #555555;
-    margin-bottom: 35px;
-    line-height: 1.6;
-    max-width: 480px;
+    font-size: 16px !important;
+    color: #555555 !important;
+    margin-bottom: 35px !important;
+    line-height: 1.6 !important;
 }
 
 .cta-buttons {
-    display: flex;
-    gap: 15px;
+    display: flex !important;
+    gap: 15px !important;
 }
 
 .btn {
-    padding: 16px 32px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 14px;
+    padding: 16px 32px !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
 }
 
 .btn-dark {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 
 .btn-light {
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #cccccc;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #cccccc !important;
 }
 
-/* --- SAĞ TARAF: RESİM OLMADIĞI İÇİN CSS GRAFİĞİ --- */
+/* --- RESİM OLMADIĞI İÇİN SAĞ TARAFA YAPILAN CSS GRAFİĞİ --- */
 .right {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 45% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .css-graphic-box {
-    position: relative;
-    width: 380px;
-    height: 380px;
-    background: radial-gradient(circle, rgba(181,219,0,0.15) 0%, rgba(255,255,255,0) 70%);
+    position: relative !important;
+    width: 380px !important;
+    height: 380px !important;
+    background: radial-gradient(circle, rgba(181,219,0,0.15) 0%, rgba(255,255,255,0) 70%) !important;
 }
 
 .graphic-element {
-    position: absolute;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    position: absolute !important;
+    border-radius: 12px !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08) !important;
 }
 
 .main-card {
-    width: 240px;
-    height: 300px;
-    background: #ffffff;
-    border: 1px solid #eee;
-    top: 40px;
-    left: 40px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 3;
+    width: 240px !important;
+    height: 300px !important;
+    background: #ffffff !important;
+    border: 1px solid #eee !important;
+    top: 40px !important;
+    left: 40px !important;
+    padding: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    z-index: 3 !important;
 }
 
 .card-line {
-    height: 12px;
-    background: #f0f0f0;
-    border-radius: 6px;
+    height: 12px !important;
+    background: #f0f0f0 !important;
+    border-radius: 6px !important;
 }
 
-.card-line.long { width: 100%; background: #b5db00; }
-.card-line.short { width: 60%; }
+.card-line.long { width: 100% !important; background: #b5db00 !important; }
+.card-line.short { width: 60% !important; }
 
 .sub-card-1 {
-    width: 180px;
-    height: 180px;
-    background: #000000;
-    top: 120px;
-    left: 160px;
-    z-index: 2;
-    transform: rotate(5deg);
+    width: 180px !important;
+    height: 180px !important;
+    background: #000000 !important;
+    top: 120px !important;
+    left: 160px !important;
+    z-index: 2 !important;
+    transform: rotate(5deg) !important;
 }
 
 .sub-card-2 {
-    width: 200px;
-    height: 120px;
-    background: #b5db00;
-    top: 20px;
-    left: 120px;
-    z-index: 1;
-    transform: rotate(-8deg);
-    opacity: 0.8;
+    width: 200px !important;
+    height: 120px !important;
+    background: #b5db00 !important;
+    top: 20px !important;
+    left: 120px !important;
+    z-index: 1 !important;
+    transform: rotate(-8deg) !important;
+    opacity: 0.8 !important;
 }
 
-/* Mobil Uyumluluk */
+/* Mobil Tasarım */
 @media (max-width: 992px) {
     .main-header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 20px !important;
     }
     .nav-menu {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex !important;
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
     .hero {
-        flex-direction: column-reverse;
-        padding: 40px 20px;
-        text-align: center;
+        flex-direction: column-reverse !important;
+        padding: 40px 20px !important;
     }
     .left, .right {
-        width: 100%;
+        width: 100% !important;
     }
     h1 {
-        font-size: 42px;
+        font-size: 42px !important;
     }
     .cta-buttons {
-        flex-direction: column;
-    }
-    .description {
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: column !important;
     }
 }
