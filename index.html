@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent-a-Copy</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="logo.PNG" alt="Rent-a-Copy Logo"> 
+            <div class="logo-text">
+                <span class="brand-name">rent-a-copy<span class="yellow-text">.de</span></span>
+                <span class="sub-text">IHR COPYSHOP IN RÜSSELSHEIM</span>
+            </div>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="#" class="active">STARTSEITE</a>
+            <a href="#">LEISTUNGEN</a>
+            <a href="#">PREISE</a>
+            <a href="#">ÜBER UNS</a>
+            <a href="#">KONTAKT</a>
+        </nav>
+        
+        <div class="header-right">
+            <span class="phone">📞 06142 43031</span>
+            <a href="#" class="btn-nav">ANGEBOT ANFRAGEN &rarr;</a>
+        </div>
+    </header>
+
     <section class="hero">
-
         <div class="left">
-
+            <p class="tagline">DRUCK. KOPIE. PERFEKTION.</p>
             <h1>
                 Ihre Ideen.<br>
                 Unser Druck.<br>
                 <span>Beeindruckend.</span>
             </h1>
-
-            <p>
-                Hochwertige Druck- und Kopierlösungen.
+            <p class="description">
+                Hochwertige Druck- und Kopierlösungen für Unternehmen, Studenten und kreative Köpfe – schnell, zuverlässig und in bester Qualität.
             </p>
-
-            <a href="#" class="btn">
-                Angebot anfragen
-            </a>
-
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-dark">➔ DATEIEN HOCHLADEN</a>
+                <a href="#" class="btn btn-light">ANGEBOT ANFRAGEN &rarr;</a>
+            </div>
         </div>
 
         <div class="right">
-
-            <img src="images/hero.jpg">
-
+            <img src="images/hero.jpg" alt="Rent-a-Copy Printer and Flyers">
         </div>
-
     </section>
 
     <script src="app.js"></script>
-
 </body>
-
 </html>
